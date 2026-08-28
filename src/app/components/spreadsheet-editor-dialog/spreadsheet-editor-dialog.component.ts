@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, HostListener, OnDestroy, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { SpreadsheetAllModule, SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
+import { SpreadsheetAllModule, SpreadsheetComponent, focus } from '@syncfusion/ej2-angular-spreadsheet';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { environment } from '../../../environments/environment';
 
@@ -38,6 +38,17 @@ export class SpreadsheetEditorDialogComponent implements OnDestroy {
     private dialogRef: MatDialogRef<SpreadsheetEditorDialogComponent>
   ) { }
 
+  ngOnInit(): void {
+    this.dialogRef.afterOpened().subscribe(() => {
+      setTimeout(() => {
+        this.spreadsheet.resize();
+        this.spreadsheet.cssClass = '';
+        this.spreadsheet.dataBind();
+        focus(this.spreadsheet.element);
+      });
+    });
+  }
+
   // Close the dialog and notify the host. 
   public onClose(): void {
     this.dialogRef.close();
@@ -48,9 +59,6 @@ export class SpreadsheetEditorDialogComponent implements OnDestroy {
     this.dialogRef.close();
   }
 
-  public created(): void{
-    this.spreadsheet.resize();
-  }  
   // Spreadsheet action begin event
   public onActionBegin(args: any): void {
     if (args.action == "resizeToFit") {
