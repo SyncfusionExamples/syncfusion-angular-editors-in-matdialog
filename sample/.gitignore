@@ -1,0 +1,7 @@
+# filepath: d:\Local getting started\Angular\DOCX and Spreadsheet\DOCX and Spreadsheet sample\docx-spreadsheet-app\.gitignore
+node_modules/
+.angular/
+dist/
+.env.local
+.DS_Store
+Thumbs.db

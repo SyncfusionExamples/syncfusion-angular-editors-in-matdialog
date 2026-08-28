@@ -1,0 +1,54 @@
+:host {
+  display: block;
+}
+
+/* Material dialog title */
+.mat-mdc-dialog-title {
+  margin: 0 !important;
+  padding: 16px 24px !important;
+}
+
+/* Header container */
+.docx-dialog-header__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6750a4 !important;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Title text */
+.docx-dialog-header__title {
+  color: #1f2937;
+}
+
+/* Footer container */
+.mat-mdc-dialog-actions {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 16px 24px !important;
+  border-top: 1px solid #e5e7eb;
+  background: #fafafa;
+  flex-wrap: wrap;
+}
+
+/* All Syncfusion buttons inside footer */
+.mat-mdc-dialog-actions .e-btn {
+  min-width: 140px;
+  height: 42px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* Push Close button to the far right */
+.mat-mdc-dialog-actions .e-primary {
+  margin-left: auto;
+}
+
+/* Print button slightly emphasized */
+.mat-mdc-dialog-actions .e-info {
+  margin-left: 8px;
+}

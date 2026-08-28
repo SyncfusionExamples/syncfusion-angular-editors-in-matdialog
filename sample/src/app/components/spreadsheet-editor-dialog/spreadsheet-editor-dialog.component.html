@@ -1,0 +1,39 @@
+<h2 mat-dialog-title>
+  <div class="sheet-dialog-header">
+    <span class="e-icons e-file-xls" aria-hidden="true"></span>
+    <span class="sheet-dialog-header_title">
+      Spreadsheet Editor
+    </span>
+  </div>
+</h2>
+
+<mat-dialog-content class="sheet-dialog-content">
+  <ejs-spreadsheet #spreadsheet [openUrl]="openUrl" [saveUrl]="saveUrl" [allowOpen]="true" [allowSave]="true"
+    height="100%" width="100%" (actionBegin)="onActionBegin($event)">
+    <e-sheets>
+      <e-sheet name="Sheet1"></e-sheet>
+    </e-sheets>
+  </ejs-spreadsheet>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button ejs-button cssClass="e-outline" iconCss="e-icons e-export" (click)="exportAs('Xlsx')">
+    Export XLSX
+  </button>
+
+  <button ejs-button cssClass="e-outline" iconCss="e-icons e-export" (click)="exportAs('Xls')">
+    Export XLS
+  </button>
+
+  <button ejs-button cssClass="e-outline" iconCss="e-icons e-export" (click)="exportAs('Csv')">
+    Export CSV
+  </button>
+
+  <button ejs-button cssClass="e-outline" iconCss="e-icons e-export" (click)="exportAs('Pdf')">
+    Export PDF
+  </button>
+
+  <button ejs-button cssClass="e-primary" iconCss="e-icons e-close" (click)="onClose()">
+    Close
+  </button>
+</mat-dialog-actions>
