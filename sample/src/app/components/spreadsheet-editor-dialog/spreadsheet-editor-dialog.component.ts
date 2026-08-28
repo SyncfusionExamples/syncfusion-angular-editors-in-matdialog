@@ -48,14 +48,7 @@ export class SpreadsheetEditorDialogComponent implements OnDestroy {
     this.dialogRef.close();
   }
 
-  // Dialog open event. 
-  public onDialogOpen(): void {
-
-    
-  }
-
   public created(): void{
-    
     this.spreadsheet.resize();
   }  
   // Spreadsheet action begin event
