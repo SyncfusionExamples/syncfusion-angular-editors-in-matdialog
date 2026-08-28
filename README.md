@@ -1,4 +1,4 @@
-# DOCX & Spreadsheet Editor Sample
+# DOCX & Spreadsheet Editor Inside Material Dialog Sample
 
 Angular 19 standalone application demonstrating two Syncfusion editors opened from a
 home page through modal dialogs:
