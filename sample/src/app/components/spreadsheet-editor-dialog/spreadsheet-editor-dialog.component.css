@@ -1,0 +1,45 @@
+:host {
+  display: block;
+}
+
+.e-spreadsheet .e-resize-handle {
+    width: 1px !important;
+}
+
+/* Mat dialog customization */
+
+.mat-mdc-dialog-title {
+  margin: 0 !important;
+  padding: 10px 24px !important;
+}
+
+/* Header container */
+.sheet-dialog-header_title {
+  display: flex;
+  align-items: center;
+  color: #6750a4;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mat-mdc-dialog-actions {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 24px !important;
+  border-top: 1px solid #e5e7eb;
+  background: #fafafa;
+  flex-wrap: wrap;
+}
+
+.mat-mdc-dialog-actions .e-btn {
+  min-width: 130px;
+  height: 42px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.mat-mdc-dialog-actions .e-primary {
+  margin-left: auto;
+}

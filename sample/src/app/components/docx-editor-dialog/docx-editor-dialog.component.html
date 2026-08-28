@@ -1,0 +1,66 @@
+<h2 mat-dialog-title>
+  <div class="docx-dialog-header">
+    <span class="e-icons e-file-doc" aria-hidden="true"></span>
+    <span class="docx-dialog-header__title">
+      Word Document Editor
+    </span>
+  </div>
+</h2>
+
+<mat-dialog-content class="docx-dialog-content">
+  <ejs-documenteditorcontainer
+    #docEditor
+    [serviceUrl]="serviceUrl"
+    height="100%"
+    width="100%"
+    style="display:block;"
+    [enableToolbar]="true"
+    [toolbarMode]="toolbarMode"
+    [ribbonLayout]="ribbonLayout"
+  >
+  </ejs-documenteditorcontainer>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+
+  <button
+    ejs-button
+    cssClass="e-outline"
+    iconCss="e-icons e-export"
+    (click)="exportAs('Docx')">
+    Export DOCX
+  </button>
+
+  <button
+    ejs-button
+    cssClass="e-outline"
+    iconCss="e-icons e-export"
+    (click)="exportAs('Sfdt')">
+    Export SFDT
+  </button>
+
+  <button
+    ejs-button
+    cssClass="e-outline"
+    iconCss="e-icons e-export"
+    (click)="exportAs('Txt')">
+    Export TXT
+  </button>
+
+  <button
+    ejs-button
+    cssClass="e-info"
+    iconCss="e-icons e-print"
+    (click)="print()">
+    Print
+  </button>
+
+  <button
+    ejs-button
+    cssClass="e-primary"
+    iconCss="e-icons e-close"
+    (click)="onClose()">
+    Close
+  </button>
+
+</mat-dialog-actions>

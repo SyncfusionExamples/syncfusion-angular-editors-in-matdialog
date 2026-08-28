@@ -1,0 +1,119 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
+
+.home-header {
+  padding: var(--space-3xl) var(--space-xl) var(--space-xl);
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    var(--color-primary-container) 0%,
+    var(--color-surface) 100%
+  );
+}
+
+.home-header__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.home-header__brand .e-large {
+  font-size: 32px;
+  color: var(--color-primary);
+}
+
+.home-header__title {
+  margin: 0;
+  font-size: var(--font-title-large, 22px);
+  font-weight: 600;
+  color: var(--color-on-primary-container);
+}
+
+.home-header__subtitle {
+  margin: var(--space-md) auto 0;
+  max-width: 600px;
+  font-size: var(--font-body-large, 16px);
+  color: var(--color-on-surface);
+  opacity: 0.75;
+}
+
+.home-main {
+  padding: var(--space-2xl) var(--space-xl) var(--space-3xl);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.home-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .home-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface-container-low);
+  border: 1px solid var(--color-outline-variant);
+  box-shadow: var(--elevation-1);
+  transition: box-shadow 200ms ease, transform 200ms ease;
+}
+
+.home-card:hover {
+  box-shadow: var(--elevation-3);
+  transform: translateY(-2px);
+}
+
+.home-card__icon {
+  font-size: 48px;
+  margin-bottom: var(--space-md);
+}
+
+.home-card--word .home-card__icon {
+  color: var(--color-word);
+}
+
+.home-card--excel .home-card__icon {
+  color: var(--color-excel);
+}
+
+.home-card__title {
+  margin: 0 0 var(--space-sm);
+  font-size: var(--font-title-large, 22px);
+  font-weight: 600;
+  color: var(--color-on-surface);
+}
+
+.home-card__description {
+  margin: 0 0 var(--space-xl);
+  font-size: var(--font-body-medium, 14px);
+  color: var(--color-on-surface);
+  opacity: 0.80;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Syncfusion button override — make primary CTA use brand colors */
+.home-card .e-primary {
+  background-color: var(--color-word);
+  border-color: var(--color-word);
+  color: #ffffff;
+}
+
+.home-card .e-success {
+  background-color: var(--color-excel);
+  border-color: var(--color-excel);
+  color: #ffffff;
+}

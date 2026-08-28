@@ -1,0 +1,39 @@
+<header class="home-header" role="banner">
+  <div class="home-header__brand">
+    <span class="e-icons e-file-doc e-large" aria-hidden="true"></span>
+    <h1 class="home-header_title">Syncfusion Spreadsheet and Document Editor Sample</h1>
+  </div>
+  <p class="home-header_subtitle">
+    Open the Word or Excel editor to author or modify your documents.
+  </p>
+</header>
+
+<main class="home-main" role="main">
+  <section class="home-actions" aria-label="Available document editors">
+    <article class="home-card home-card--word" aria-labelledby="card-word-title">
+      <span class="home-card__icon e-icons e-file-word" aria-hidden="true"></span>
+      <h2 id="card-word-title" class="home-card__title">Edit Word</h2>
+      <p class="home-card__description">
+        Open a full-featured editor for Microsoft Word documents with formatting,
+        tables, images, headers, footnotes, and comments.
+      </p>
+      <button ejs-button id="btn-edit-word" cssClass="e-primary e-large e-block" iconCss="e-icons e-edit"
+        (click)="openDocxEditor()" aria-label="Open DOCX editor">
+        Edit Word
+      </button>
+    </article>
+
+    <article class="home-card home-card--excel" aria-labelledby="card-excel-title">
+      <span class="home-card__icon e-icons e-file-xls" aria-hidden="true"></span>
+      <h2 id="card-excel-title" class="home-card__title">Edit Excel</h2>
+      <p class="home-card__description">
+        Open an Excel-compatible spreadsheet editor with formulas, charts,
+        conditional formatting, freezing panes, and multi-sheet workbooks.
+      </p>
+      <button ejs-button id="btn-edit-excel" cssClass="e-success e-large e-block" iconCss="e-icons e-edit"
+        (click)="openSpreadsheetEditor()" aria-label="Open Spreadsheet editor">
+        Edit Excel
+      </button>
+    </article>
+  </section>
+</main>
