@@ -25,10 +25,6 @@
               }
             ],
             "styles": [
-              "src/material-theme.scss",
-              "node_modules/@syncfusion/ej2-material3-theme/styles/material3.css",
-              "node_modules/@syncfusion/ej2-material3-theme/styles/document-editor/index.css",
-              "node_modules/@syncfusion/ej2-material3-theme/styles/spreadsheet/index.css",
               "src/styles.css"
             ],
             "scripts": []

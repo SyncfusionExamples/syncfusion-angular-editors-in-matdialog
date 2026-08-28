@@ -83,6 +83,8 @@ The demo uses Syncfusion's hosted demo endpoints (read-only public). For product
 
 ---
 
+> **Note:** When running the application with Angular 21+, some Spreadsheet dropdowns and other overlay-based controls may not render correctly inside Material Dialogs due to Angular Material's native popover behavior. To ensure these controls display properly above the active dialog, the application configures Angular CDK overlays using `OVERLAY_DEFAULT_CONFIG` with `usePopover: false` in the root application configuration.
+
 ## Export Summary
 
 | Editor | Footer actions |

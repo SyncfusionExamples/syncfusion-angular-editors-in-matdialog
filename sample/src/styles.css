@@ -1,3 +1,5 @@
+@import '../node_modules/@syncfusion/ej2-material3-theme/styles/material3.css';
+
 /* filepath: d:\Local getting started\Angular\DOCX and Spreadsheet\DOCX and Spreadsheet sample\docx-spreadsheet-app\src\styles.css
    Material Design 3 design tokens + global resets
 */
@@ -109,5 +111,3 @@ button {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
-
-

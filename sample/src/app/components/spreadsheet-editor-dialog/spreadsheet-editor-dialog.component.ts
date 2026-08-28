@@ -50,12 +50,14 @@ export class SpreadsheetEditorDialogComponent implements OnDestroy {
 
   // Dialog open event. 
   public onDialogOpen(): void {
-    setTimeout(() => {
-      // Use resize method to recompute layout after panel becomes visible
-      this.spreadsheet.resize();
-    }, 0);
+
+    
   }
 
+  public created(): void{
+    
+    this.spreadsheet.resize();
+  }  
   // Spreadsheet action begin event
   public onActionBegin(args: any): void {
     if (args.action == "resizeToFit") {
@@ -64,6 +66,11 @@ export class SpreadsheetEditorDialogComponent implements OnDestroy {
       let selectedRange: any = activeSheet.selectedRange;
       this.spreadsheet.autoFit(selectedRange);
     }
+  }
+
+  // Spreadsheet beforeSave begin event
+  public beforeSave(args: any): void {
+    args.isFullPost = true;
   }
   // Default file name for export. 
   private get fileName(): string {
