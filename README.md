@@ -1,6 +1,6 @@
-# DOCX & Spreadsheet Editor Sample
+# DOCX & Spreadsheet Editor Inside Material Dialog Sample
 
-Angular 19 standalone application demonstrating two Syncfusion editors opened from a
+Angular 21 standalone application demonstrating two Syncfusion editors opened from a
 home page through modal dialogs:
 
 - **Edit Word** — opens `DocumentEditorContainerComponent` (built-in toolbar, DOCX/SFDT/TXT export).
@@ -13,8 +13,8 @@ The design system follows **Material Design 3** tokens paired with the
 
 ## Prerequisites
 
-- Node.js 18+ and npm
-- Angular CLI 19+: `npm install -g @angular/cli`
+- Node.js 21+ and npm
+- Angular CLI 21: `npm install -g @angular/cli`
 - (Optional) A Syncfusion license key. The project works with Syncfusion's Community
   License without a key; to register a paid license, set the value at
   `src/environments/environment.ts`.

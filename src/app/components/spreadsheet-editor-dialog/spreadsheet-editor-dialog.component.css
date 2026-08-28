@@ -1,5 +1,5 @@
-:host {
-  display: block;
+.mat-sf-spreadsheet {
+  visibility: hidden;
 }
 
 .e-spreadsheet .e-resize-handle {

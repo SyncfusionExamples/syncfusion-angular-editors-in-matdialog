@@ -7,8 +7,8 @@
   </div>
 </h2>
 <mat-dialog-content class="sheet-dialog-content">
-  <ejs-spreadsheet #spreadsheet [openUrl]="openUrl" [saveUrl]="saveUrl" [allowOpen]="true" [allowSave]="true"
-    height="100%" width="100%" (beforeSave)="beforeSave($event)" (actionBegin)="onActionBegin($event)" (created)="created()">
+  <ejs-spreadsheet #spreadsheet cssClass="mat-sf-spreadsheet" [openUrl]="openUrl" [saveUrl]="saveUrl" [allowOpen]="true" [allowSave]="true"
+    height="100%" width="100%" (beforeSave)="beforeSave($event)" (actionBegin)="onActionBegin($event)">
     <e-sheets>
       <e-sheet name="Sheet1"></e-sheet>
     </e-sheets>
